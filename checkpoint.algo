@@ -1,0 +1,36 @@
+ALGORITHM algo_checkpoint
+VAR
+ch: STRING := 'hello Go My Code.';
+
+BEGIN
+
+somme:=0
+FOR i FROM 1 TO legnth(ch)  DO 
+IF (ch[i] in ("a,z") or ("A,Z")) THEN
+somme:= somme+1;
+END_IF
+END_FOR
+write('le somme de caractére est ',somme);
+
+
+numberWord:=1;
+FOR i FROM 1 TO legnth(ch)  DO 
+IF (ch[i] =" ") THEN
+numberWord:= numberWord+1;
+else write('number word= 1') ;
+END_IF
+END_FOR
+
+write('le nombre de word  est ',numberWord);
+
+
+sommeVoy:=0
+FOR i FROM 1 TO legnth(ch)  DO 
+IF (ch[i] in ("a, e, i, o, u, y,A,E,I,O,U,Y")) THEN
+sommeVoy:= sommeVoy+1;
+END_IF
+END_FOR
+write('le somme de voyelle est ',sommeVoy);
+
+
+END
